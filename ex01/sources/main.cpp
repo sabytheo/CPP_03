@@ -17,6 +17,7 @@ int main(void)
 	c.beRepaired(5);
 
 	d.attack("luc");
+	e.guardGate();
 	e.takeDamage(50);
 	e.beRepaired(10);
 

@@ -5,9 +5,9 @@
 
 class Claptrap
 {
-	private:
+	protected:
 			std::string _name;
-			int	_Hit_points;
+			int	_hitPoints;
 			int	_Energy_points;
 			int	_Attack_damage;
 	public:
@@ -20,25 +20,21 @@ class Claptrap
 			Claptrap& operator=(const Claptrap& other);
 
 			void attack(const std::string& target);
-			void takeDamage(unsigned int amount);
+			virtual void takeDamage(unsigned int amount);
 			void beRepaired(unsigned int amount);
 };
 
 class Scavtrap : public Claptrap
 {
-	private:
-			std::string _name;
-			int	_Hit_points;
-			int	_Energy_points;
-			int	_Attack_damage;
 	public:
 
 			Scavtrap(void);
 			Scavtrap(const std::string);
 			Scavtrap(const Scavtrap& copy);
-			~Scavtrap();
+			virtual ~Scavtrap();
 
 			Scavtrap& operator=(const Scavtrap& other);
+			void takeDamage(unsigned int amount);
 			void guardGate();
 };
 
