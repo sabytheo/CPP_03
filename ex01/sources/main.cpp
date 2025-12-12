@@ -1,4 +1,5 @@
 #include "Claptrap.hpp"
+#include "Scavtrap.hpp"
 #include <iostream>
 
 int main(void)

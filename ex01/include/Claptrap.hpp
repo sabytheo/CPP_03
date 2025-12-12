@@ -24,19 +24,4 @@ class Claptrap
 			void beRepaired(unsigned int amount);
 };
 
-class Scavtrap : public Claptrap
-{
-	public:
-
-			Scavtrap(void);
-			Scavtrap(const std::string);
-			Scavtrap(const Scavtrap& copy);
-			virtual ~Scavtrap();
-
-			Scavtrap& operator=(const Scavtrap& other);
-			void takeDamage(unsigned int amount);
-			void guardGate();
-};
-
-
 #endif

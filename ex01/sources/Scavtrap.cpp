@@ -6,11 +6,12 @@
 /*   By: tsaby <tsaby@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/12 14:56:45 by tsaby             #+#    #+#             */
-/*   Updated: 2025/12/12 16:58:01 by tsaby            ###   ########.fr       */
+/*   Updated: 2025/12/12 17:01:28 by tsaby            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Claptrap.hpp"
+#include "Scavtrap.hpp"
 
 Scavtrap::Scavtrap(void): Claptrap()
 {
