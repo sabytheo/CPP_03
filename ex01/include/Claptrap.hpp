@@ -8,8 +8,8 @@ class Claptrap
 	protected:
 			std::string _name;
 			int	_hitPoints;
-			int	_Energy_points;
-			int	_Attack_damage;
+			int	_energyPoints;
+			int	_attackDamage;
 	public:
 
 			Claptrap(void);

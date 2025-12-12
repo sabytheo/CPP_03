@@ -1,4 +1,6 @@
 #include "Claptrap.hpp"
+#include "Scavtrap.hpp"
+#include "Flagtrap.hpp"
 #include <iostream>
 
 int main(void)
@@ -6,8 +8,12 @@ int main(void)
 	Claptrap a;
 	Claptrap b("Max");
 	Claptrap c("Tom");
+
 	Scavtrap d;
 	Scavtrap e("Paul");
+
+	Flagtrap f;
+	Flagtrap g("Jack");
 
 	a.attack("dede");
 	b.attack("joe");
@@ -17,8 +23,11 @@ int main(void)
 	c.beRepaired(5);
 
 	d.attack("luc");
+	e.guardGate();
 	e.takeDamage(50);
 	e.beRepaired(10);
+
+	g.highFivesGuys();
 
 	return (0);
 }

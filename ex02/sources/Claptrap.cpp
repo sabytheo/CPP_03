@@ -7,8 +7,8 @@ Claptrap::Claptrap(void) : _name("Default"),_hitPoints(10),_Energy_points(10),_A
 
 Claptrap::Claptrap(const std::string name) : _hitPoints(10),_Energy_points(10),_Attack_damage(0)
 {
-	std::cout << "Name constructor called" << std::endl;
 	this->_name = name;
+	std::cout << "constructor Claptrap " << this->_name << " called" << std::endl;
 }
 
 Claptrap::Claptrap(const Claptrap &copy)
@@ -58,5 +58,5 @@ void Claptrap::beRepaired(unsigned int amount)
 
 Claptrap::~Claptrap(void)
 {
-	std::cout << "Destructor called" << std::endl;
+	std::cout << "Destructor Claptrap " << this->_name << " called" << std::endl;
 }

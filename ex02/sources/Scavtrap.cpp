@@ -6,11 +6,12 @@
 /*   By: tsaby <tsaby@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/12 14:56:45 by tsaby             #+#    #+#             */
-/*   Updated: 2025/12/12 16:17:34 by tsaby            ###   ########.fr       */
+/*   Updated: 2025/12/12 17:16:46 by tsaby            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Claptrap.hpp"
+#include "Scavtrap.hpp"
 
 Scavtrap::Scavtrap(void): Claptrap()
 {
@@ -27,8 +28,8 @@ Scavtrap::Scavtrap(const std::string name) : Claptrap(name)
 	this->_hitPoints = 100;
 	this->_Energy_points = 50;
 	this->_Attack_damage = 20;
-	std::cout << "Name Scavtrap constructor called" << std::endl;
 	this->_name = name;
+	std::cout << "constructor Scavtrap " << this->_name << " called" << std::endl;
 }
 
 Scavtrap::Scavtrap(const Scavtrap &copy)
@@ -60,11 +61,11 @@ void Scavtrap::takeDamage(unsigned int amount)
 
 void Scavtrap::guardGate()
 {
-	std::cout << "ScavTrap " << this->_name << "is now in Gate Keeper mode" << std::endl;
+	std::cout << "ScavTrap " << this->_name << " is now in Gate Keeper mode" << std::endl;
 }
 
 Scavtrap::~Scavtrap(void)
 {
-	std::cout << "Destructor Scavtrap called" << std::endl;
+	std::cout << "Destructor Scavtrap " << this->_name << " called" << std::endl;
 }
 

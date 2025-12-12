@@ -6,7 +6,7 @@
 /*   By: tsaby <tsaby@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/12 14:56:45 by tsaby             #+#    #+#             */
-/*   Updated: 2025/12/12 17:01:28 by tsaby            ###   ########.fr       */
+/*   Updated: 2025/12/12 17:25:04 by tsaby            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,8 @@ Scavtrap::Scavtrap(void): Claptrap()
 {
 	this->_name = "Default";
 	this->_hitPoints = 100;
-	this->_Energy_points = 50;
-	this->_Attack_damage = 20;
+	this->_energyPoints = 50;
+	this->_attackDamage = 20;
 	std::cout << "Default Scavtrap constructor called" << std::endl;
 }
 
@@ -26,10 +26,10 @@ Scavtrap::Scavtrap(const std::string name) : Claptrap(name)
 {
 	this->_name = name;
 	this->_hitPoints = 100;
-	this->_Energy_points = 50;
-	this->_Attack_damage = 20;
-	std::cout << "Name Scavtrap constructor called" << std::endl;
+	this->_energyPoints = 50;
+	this->_attackDamage = 20;
 	this->_name = name;
+	std::cout << "Constructor Scavtrap " << this->_name << " called" << std::endl;
 }
 
 Scavtrap::Scavtrap(const Scavtrap &copy)
@@ -66,6 +66,6 @@ void Scavtrap::guardGate()
 
 Scavtrap::~Scavtrap(void)
 {
-	std::cout << "Destructor Scavtrap called" << std::endl;
+	std::cout << "Destructor Scavtrap " << this->_name << " called" << std::endl;
 }
 
