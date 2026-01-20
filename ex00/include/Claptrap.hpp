@@ -13,7 +13,7 @@ class Claptrap
 	public:
 
 			Claptrap(void);
-			Claptrap(const std::string name);
+			Claptrap(const std::string& name);
 			Claptrap(const Claptrap& copy);
 			~Claptrap(void);
 
@@ -24,6 +24,6 @@ class Claptrap
 			void beRepaired(unsigned int amount);
 };
 
-std::ostream& operator<<(std::ostream& os,const Claptrap& other);
+// std::ostream& operator<<(std::ostream& os,const Claptrap& other);
 
 #endif

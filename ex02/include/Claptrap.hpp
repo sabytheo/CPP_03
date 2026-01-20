@@ -8,14 +8,14 @@ class Claptrap
 	protected:
 			std::string _name;
 			int	_hitPoints;
-			int	_Energy_points;
-			int	_Attack_damage;
+			int	_energyPoints;
+			int	_attackDamage;
 	public:
 
 			Claptrap(void);
-			Claptrap(const std::string name);
+			Claptrap(const std::string& name);
 			Claptrap(const Claptrap& copy);
-			~Claptrap(void);
+			virtual ~Claptrap(void);
 
 			Claptrap& operator=(const Claptrap& other);
 

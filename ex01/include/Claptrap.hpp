@@ -13,9 +13,9 @@ class Claptrap
 	public:
 
 			Claptrap(void);
-			Claptrap(const std::string name);
+			Claptrap(const std::string& name);
 			Claptrap(const Claptrap& copy);
-			~Claptrap(void);
+			virtual ~Claptrap(void);
 
 			Claptrap& operator=(const Claptrap& other);
 
