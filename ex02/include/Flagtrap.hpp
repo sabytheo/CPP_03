@@ -6,7 +6,7 @@
 /*   By: tsaby <tsaby@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/12 16:59:57 by tsaby             #+#    #+#             */
-/*   Updated: 2025/12/12 17:07:10 by tsaby            ###   ########.fr       */
+/*   Updated: 2026/01/20 17:12:34 by tsaby            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ class Flagtrap : public Claptrap
 	public:
 
 			Flagtrap(void);
-			Flagtrap(const std::string);
+			Flagtrap(const std::string&);
 			Flagtrap(const Flagtrap& copy);
 			virtual ~Flagtrap();
 

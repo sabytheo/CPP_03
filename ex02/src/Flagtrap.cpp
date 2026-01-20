@@ -6,7 +6,7 @@
 /*   By: tsaby <tsaby@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/12 14:56:45 by tsaby             #+#    #+#             */
-/*   Updated: 2026/01/20 16:19:59 by tsaby            ###   ########.fr       */
+/*   Updated: 2026/01/20 17:12:45 by tsaby            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ Flagtrap::Flagtrap(void): Claptrap()
 	std::cout << "Default Flagtrap constructor called" << std::endl;
 }
 
-Flagtrap::Flagtrap(const std::string name) : Claptrap(name)
+Flagtrap::Flagtrap(const std::string &name) : Claptrap(name)
 {
 	this->_hitPoints = 100;
 	this->_energyPoints = 100;
