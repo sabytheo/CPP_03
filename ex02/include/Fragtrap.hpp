@@ -1,26 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Flagtrap.hpp                                       :+:      :+:    :+:   */
+/*   Fragtrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tsaby <tsaby@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/12 16:59:57 by tsaby             #+#    #+#             */
-/*   Updated: 2026/01/20 17:12:34 by tsaby            ###   ########.fr       */
+/*   Updated: 2026/01/27 09:31:28 by tsaby            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 # include "Claptrap.hpp"
 
-class Flagtrap : public Claptrap
+class Fragtrap : public Claptrap
 {
 	public:
 
-			Flagtrap(void);
-			Flagtrap(const std::string&);
-			Flagtrap(const Flagtrap& copy);
-			virtual ~Flagtrap();
+			Fragtrap(void);
+			Fragtrap(const std::string&);
+			Fragtrap(const Fragtrap& copy);
+			virtual ~Fragtrap();
 
-			Flagtrap& operator=(const Flagtrap& other);
+			Fragtrap& operator=(const Fragtrap& other);
+			void attack(const std::string &target) ;
 			void highFivesGuys(void);
 };

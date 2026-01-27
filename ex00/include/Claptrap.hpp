@@ -7,9 +7,9 @@ class Claptrap
 {
 	private:
 			std::string _name;
-			int	_hitPoints;
-			int	_energyPoints;
-			int	_attackDamage;
+			unsigned int	_hitPoints;
+			unsigned int	_energyPoints;
+			unsigned int	_attackDamage;
 	public:
 
 			Claptrap(void);
@@ -23,7 +23,5 @@ class Claptrap
 			void takeDamage(unsigned int amount);
 			void beRepaired(unsigned int amount);
 };
-
-// std::ostream& operator<<(std::ostream& os,const Claptrap& other);
 
 #endif

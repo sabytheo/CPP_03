@@ -49,18 +49,18 @@ void Claptrap::takeDamage(unsigned int amount)
 		if (this->_hitPoints <= amount)
 		{
 			this->_hitPoints = 0;
-			std::cout << "ClapTrap " << this->_name << " takes " << amount << " damage and dies!" << std::endl;
+			std::cout << this->_name << " takes " << amount << " damage and dies!" << std::endl;
 		}
 		else
 		{
 			this->_hitPoints -= amount;
-			std::cout << "ClapTrap " << this->_name << " takes " << amount << " points of damage" << std::endl;
-			std::cout << "ClapTrap " << this->_name << " have now " << this->_hitPoints << " Hit points" << std::endl;
+			std::cout << this->_name << " takes " << amount << " points of damage" << std::endl;
+			std::cout << this->_name << " have now " << this->_hitPoints << " Hit points" << std::endl;
 		}
 	}
 	else
 	{
-		std::cout << "ClapTrap " << this->_name << " cannot take damage he is dead" << std::endl;
+		std::cout << this->_name << " cannot take damage he is dead" << std::endl;
 	}
 }
 void Claptrap::beRepaired(unsigned int amount)
@@ -69,12 +69,12 @@ void Claptrap::beRepaired(unsigned int amount)
 	{
 		this->_hitPoints += amount;
 		this->_energyPoints -= 1;
-		std::cout << "ClapTrap " << this->_name << " be repaired of " << amount << " points of healings" << std::endl;
-		std::cout << "ClapTrap " << this->_name << " have now " << this->_hitPoints << " Hit points" << std::endl;
+		std::cout << this->_name << " be repaired of " << amount << " points of healings" << std::endl;
+		std::cout << this->_name << " have now " << this->_hitPoints << " Hit points" << std::endl;
 	}
 	else
 	{
-		std::cout << "ClapTrap " << this->_name << " cannot repair (dead or no energy)." << std::endl;
+		std::cout << this->_name << " cannot repair (dead or no energy)." << std::endl;
 	}
 }
 

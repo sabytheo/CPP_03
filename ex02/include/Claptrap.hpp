@@ -7,9 +7,9 @@ class Claptrap
 {
 	protected:
 			std::string _name;
-			int	_hitPoints;
-			int	_energyPoints;
-			int	_attackDamage;
+			unsigned int	_hitPoints;
+			unsigned int	_energyPoints;
+			unsigned int	_attackDamage;
 	public:
 
 			Claptrap(void);
@@ -19,8 +19,8 @@ class Claptrap
 
 			Claptrap& operator=(const Claptrap& other);
 
-			void attack(const std::string& target);
-			virtual void takeDamage(unsigned int amount);
+			virtual void attack(const std::string& target);
+			void takeDamage(unsigned int amount);
 			void beRepaired(unsigned int amount);
 };
 

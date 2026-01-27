@@ -7,6 +7,8 @@ int main(void)
 	Claptrap b("Max");
 	Claptrap c("Tom");
 
+	std::cout << "------------------------" << std::endl;
+
 	a.attack("dede");
 	b.attack("joe");
 	b.takeDamage(10);
@@ -14,5 +16,8 @@ int main(void)
 
 	c.takeDamage(5);
 	c.beRepaired(5);
+
+	std::cout << "------------------------" << std::endl;
+
 	return (0);
 }

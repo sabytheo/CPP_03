@@ -6,7 +6,7 @@
 #    By: tsaby <tsaby@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/02/23 17:03:26 by tsaby             #+#    #+#              #
-#    Updated: 2026/01/20 15:05:32 by tsaby            ###   ########.fr        #
+#    Updated: 2026/01/27 09:17:01 by tsaby            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,7 @@ NC		:= \033[0m
 
 SRCS		:=	Claptrap.cpp \
 				Scavtrap.cpp \
-				Flagtrap.cpp \
+				Fragtrap.cpp \
 				main.cpp
 
 #*------------------------------------------------------------------------------*
@@ -35,7 +35,7 @@ OBJS		:=	$(SRCS:%.cpp=$(OBJS_D)%.o)
 
 HEAD		:=	include/Claptrap.hpp \
 				include/Scavtrap.hpp \
-				include/Flagtrap.hpp
+				include/Fragtrap.hpp
 
 HEAD_D		:=	.
 
